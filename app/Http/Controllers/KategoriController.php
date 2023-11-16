@@ -13,7 +13,7 @@ class KategoriController extends Controller
     public function index()
     {
         //
-        return view('kategori.index');
+        return view('layouts.admin.kategori.index');
     }
 
     /**
