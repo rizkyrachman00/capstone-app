@@ -28,4 +28,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard.index');
 
 // halaman kategori
-Route::resource('/kategori', [\App\Http\Controllers\KategoriController::class, 'index']);
+// Route::resource('kategori', KategoriController::class);
+Route::get('/kategori', [App\Http\Controllers\KategoriController::class, 'index'])->name('kategori.index');
